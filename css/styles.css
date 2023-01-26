@@ -77,6 +77,7 @@ a {
 
 .header {
     border-bottom: 1px solid var(--second-text-color);
+    max-width: 1440px;
 }
 
 .header-container {
@@ -216,30 +217,34 @@ a {
 }
 
 .feature-item::before {
-    display: block;
-    content: "";
-    width: 120x;
-    outline: 1px solid rgb(201, 28, 28);
-    background-size: contain;
+    margin-bottom: 8px;
+    background-color: red;
+    height: 112px;
     background-repeat: no-repeat;
     background-position: center;
-    background-color: rgb(13, 228, 228);
-
 }
 
 .feature-antenna::before {
+    display: block;
+    content: "";
     background-image: url("../images/antenna.png");
 }
 
 .feature-clock::before {
+    display: block;
+        content: "";
     background-image: url("../images/clock.png")
 }
 
 .feature-diagram::before {
+    display: block;
+        content: "";
     background-image: url("../images/diagram.png")
 }
 
 .feature-astronaut::before {
+    display: block;
+        content: "";
     background-image: url("../images/astronaut.png")
 }
 
