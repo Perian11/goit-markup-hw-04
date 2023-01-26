@@ -77,12 +77,13 @@ a {
 
 .header {
     border-bottom: 1px solid var(--second-text-color);
-    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
     display: flex;
     align-items: center;
+    /* border-bottom: 1px solid #E7E9FC; */
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16);
 }
 
 .logo {
@@ -151,6 +152,16 @@ a {
     background-color: var(--second-background-color);
     text-align: center;
 
+    background-color: var(--dark-bg-cl);
+    background-image: linear-gradient(rgba(55, 58, 104, 0.7), rgba(55, 58, 104, 0.7)),
+        url(../images/people-office.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
 .hero-title {
@@ -202,6 +213,34 @@ a {
 
 .feature-item {
     width: 264px;
+}
+
+.feature-item::before {
+    display: block;
+    content: "";
+    width: 120x;
+    outline: 1px solid rgb(201, 28, 28);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgb(13, 228, 228);
+
+}
+
+.feature-antenna::before {
+    background-image: url("../images/antenna.png");
+}
+
+.feature-clock::before {
+    background-image: url("../images/clock.png")
+}
+
+.feature-diagram::before {
+    background-image: url("../images/diagram.png")
+}
+
+.feature-astronaut::before {
+    background-image: url("../images/astronaut.png")
 }
 
 .feature-title {
@@ -356,5 +395,3 @@ img {
 .project-text {
     color: var(--text-color);
 }
-
-
