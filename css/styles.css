@@ -83,8 +83,8 @@ a {
 .header-container {
     display: flex;
     align-items: center;
-    /* border-bottom: 1px solid #E7E9FC; */
-    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16);
+    /* border-bottom: 1px solid #E7E9FC;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16); */
 }
 
 .logo {
@@ -218,7 +218,7 @@ a {
 
 .feature-item::before {
     margin-bottom: 8px;
-    background-color: red;
+    background-color: #F4F4FD;
     height: 112px;
     background-repeat: no-repeat;
     background-position: center;
@@ -227,25 +227,25 @@ a {
 .feature-antenna::before {
     display: block;
     content: "";
-    background-image: url("../images/antenna.png");
+    background-image: url("../images/Section_1/antenna.png");
 }
 
 .feature-clock::before {
     display: block;
         content: "";
-    background-image: url("../images/clock.png")
+    background-image: url("../images/Section_1/clock.png")
 }
 
 .feature-diagram::before {
     display: block;
         content: "";
-    background-image: url("../images/diagram.png")
+    background-image: url("../images/Section_1/diagram.png")
 }
 
 .feature-astronaut::before {
     display: block;
         content: "";
-    background-image: url("../images/astronaut.png")
+    background-image: url("../images/Section_1/astronaut.png")
 }
 
 .feature-title {
@@ -314,6 +314,39 @@ img {
     line-height: 1.2;
     color: var(--main-text-color);
 }
+
+/* Customers */
+.customers-title {
+    margin-bottom: ;
+        color: ;
+        font-weight: ;
+        font-size: ;
+        line-height: ;
+        text-align: ;
+}
+.customers-list {
+    display: ;
+    gap: ;
+}
+.customer {}
+.customer-link {
+    display: ;
+    justify-content: ;
+    align-items: ;
+    width: ;
+    height: ;
+    border: ;
+    border-radius: ;
+    color: ;
+}
+.customer-logo {
+    fill: ;
+}
+.customer-link:hover,
+.customer-link:focus {
+
+}
+
 
 /* footer */
 
