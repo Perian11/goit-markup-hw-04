@@ -5,6 +5,7 @@
     --accent-color: #4d5ae5;
     --logo-light-color: #f4f4fd;
     --background-color: #ffffff;
+    --background-icon-hover: #31d0aa;
     --second-background-color: #2e2f42;
     --light-background-color: #f4f4fd;
     --button-hover-color: #404bbf;
@@ -29,6 +30,11 @@ html {
     box-sizing: border-box;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 /* reset start */
 
 h1,
@@ -216,38 +222,6 @@ a {
     width: 264px;
 }
 
-.feature-item::before {
-    margin-bottom: 8px;
-    background-color: #F4F4FD;
-    height: 112px;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.feature-antenna::before {
-    display: block;
-    content: "";
-    background-image: url("../images/Section_1/antenna.png");
-}
-
-.feature-clock::before {
-    display: block;
-        content: "";
-    background-image: url("../images/Section_1/clock.png")
-}
-
-.feature-diagram::before {
-    display: block;
-        content: "";
-    background-image: url("../images/Section_1/diagram.png")
-}
-
-.feature-astronaut::before {
-    display: block;
-        content: "";
-    background-image: url("../images/Section_1/astronaut.png")
-}
-
 .feature-title {
     margin-bottom: 8px;
     font-weight: 500;
@@ -315,6 +289,64 @@ img {
     color: var(--main-text-color);
 }
 
+.team-text {
+    margin-bottom: 8px;
+}
+.social-txt{
+  margin-bottom: 16px;
+  color: var(--background-color);
+  font-weight: 500;
+  font-size: 16px;
+
+}
+.socials {
+    display: flex;
+    gap: 24px;
+}
+
+.list {}
+
+.social-item {
+    width: 40px;
+    height: 40px;
+}
+
+.social-link {}
+
+.link {}
+
+.social-icon {
+    fill: var(--background-color);    
+}
+.social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: var(--accent-color);
+}
+.social-link:hover,
+.social-link:focus {
+    background: var(--button-hover-color);
+}
+.footer-link{
+    background-color: rgba(255, 255, 255, 0.1);
+
+}
+
+.footer-link:hover,
+.footer-link:focus {
+    background-color: var(--background-icon-hover);
+}
+    
+.footer-link {
+width: 24px;
+height: 24px;
+fill: var(--background-color);
+}
+
 /* Customers */
 .customers-title {
     margin-bottom: ;
@@ -355,15 +387,53 @@ img {
     padding-bottom: 99px;
     background-color: var(--second-background-color);
 }
+.container-footer{
+    display: flex;
+  gap: 120px;
+}
+  
 
 .logo-footer {
     color: var(--logo-light-color);
 }
 
+.social-media{
+
+}
 .footer-text {
-    margin-top: 16px;
-    width: 264px;
-    color: var(--second-text-color);
+  width: 264px;
+  margin-top: 15px;
+  color: var(--second-text-color);
+}
+.list-footer{
+display: flex;
+  gap: 16px;
+}
+.social-item-footer{
+    width: 40px;
+  height: 40px;
+}
+
+.footer-link {
+display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  fill: var(--background-color);
+}
+
+.footer-link:hover,
+.footer-link:focus {
+    background-color: var(--background-icon-hover);
+}
+
+.footer-link {
+    width: 40px;
+    height: 40px;
+    fill: var(--background-color);
 }
 
 /* Portfolio  */
