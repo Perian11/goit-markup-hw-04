@@ -221,6 +221,15 @@ a {
 .feature-item {
     width: 264px;
 }
+.features-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 264px;
+    height: 112px;
+    border-radius: 4px;
+    background: var(--light-background-color);
+}
 
 .feature-title {
     margin-bottom: 8px;
