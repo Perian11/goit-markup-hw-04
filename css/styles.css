@@ -13,6 +13,7 @@
     --items-member: 4;
     --items-portfolio: 3;
     --priamyry-font: "Roboto", sans-serif;
+    --border-icon-color: #8E8F99;
 }
 
 body {
@@ -357,31 +358,44 @@ fill: var(--background-color);
 }
 
 /* Customers */
+
+.costomers {
+   padding-top: 200px;
+   padding-bottom: 200px;
+}
+
 .customers-title {
-    margin-bottom: ;
-        color: ;
-        font-weight: ;
-        font-size: ;
-        line-height: ;
-        text-align: ;
+    margin-bottom: 72px;
+        color: var(--second-background-color) ;
+        font-weight: 700px;
+        font-size: 36px;
+        line-height: 40px;
+        text-align: center;
 }
 .customers-list {
-    display: ;
-    gap: ;
+    display: flex;
+    gap: 24px;
 }
-.customer {}
+.customer {
+    width: 168px;
+    height: 88px;
+
+}
 .customer-link {
-    display: ;
-    justify-content: ;
-    align-items: ;
-    width: ;
-    height: ;
-    border: ;
-    border-radius: ;
-    color: ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--border-icon-color);
+  /* border-radius: 4px; */
+    border: 50px;
+    border-radius: 50px;
+    color: var(--border-icon-color);
+    cursor: pointer;
 }
 .customer-logo {
-    fill: ;
+    fill: currentColor;
 }
 .customer-link:hover,
 .customer-link:focus {
@@ -473,7 +487,7 @@ display: flex;
     letter-spacing: 0.04em;
     color: var(--accent-color);
     background-color: var(--light-background-color);
-    cursor: pointer
+    cursor: pointer;
 }
 
 .filter-btn:hover,
